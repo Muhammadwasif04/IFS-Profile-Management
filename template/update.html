@@ -4,7 +4,7 @@
 		<title>update</title>
 		<link rel="stylesheet" href="../static/style.css">
 	</head>
-	<body bgcolor="#e6ffee">
+	<body color="#e6ffee">
 		<div class="one">
 			<div class="two">
 				<h1>Side Bar</h1>
@@ -15,12 +15,12 @@
 					<li><a href="{{url_for('logout')}}">Log out</a></li>
 				</ul>
 			</div>
-			<div class="content" align="center">
+			<div class="content" align-box="center">
 				<div class="topbar">
 					<h2>Welcome!! You are in Update Page!! </h2>				 
-				</div></br></br>
+				</div>
 				<div class="contentbar">
-				<h1>Fill Your Details to Update</h1></br>
+				<h1>Fill Your Details to Update</h1>
 			<form action="{{ url_for('update') }}" method="post" autocomplete="off">
 					<div class="msg">{{ msg }}</div>
 					<input type="text" name="username" placeholder="Enter Your Username" class="textbox" id="username" required></br></br>

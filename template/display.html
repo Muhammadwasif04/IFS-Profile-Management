@@ -5,7 +5,7 @@
 		<title>display</title>
 		<link rel="stylesheet" href="../static/style.css">
 	</head>
-	<body bgcolor="#e6ffee">
+	<body color="#e6ffee">
 		<div class="one">
 			<div class="two">
 				<h1>Side Bar</h1>
@@ -16,15 +16,15 @@
 					<li><a href="{{url_for('logout')}}">Log out</a></li>
 				</ul>
 			</div>
-			<div class="content" align="center">
+			<div class="content" align-box="center">
 				<div class="topbar">
 					<h2>Welcome!! You are in Display Page!! </h2>				 
-				</div> </br>
+				</div>
 				<div class="contentbar">
-					<h1>Your Details</h1> </br>
+					<h1>Your Details</h1>
 					{% block content %}
 						<div class="border">
-							<table class="worddark"></br></br></br></br>
+							<table class="worddark">
 								<tr>
 									<td>Username:</td>
 									<td>{{ account['username'] }}</td>
